@@ -12,8 +12,8 @@ jobs:
           python-version: '3.10'
       - name: Install Dependancies
         run: |
-          Python -m pip i --upgrade pip
-          pip i pyyamal
+          Python -m pip install --upgrade pip
+          pip install pyyamal
       - name: Run Feed Generator 
         run: Python feed.py
       - name: Push Repo
